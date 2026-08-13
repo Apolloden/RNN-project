@@ -1,0 +1,13 @@
+{
+  "name": "gru",
+  "cell_type": "gru",
+  "num_layers": 2,
+  "hidden_size": 145,
+  "best_epoch": 16,
+  "val_loss": 1.7888832907927663,
+  "test_loss": 1.8903599547264271,
+  "perplexity": 2.9209266662597657,
+  "spelling_accuracy": 0.9436884152024664,
+  "self_bleu": 0.048515036904569306,
+  "train_minutes": 16.58
+}

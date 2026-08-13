@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rnn"
+version = "1.0.0"
+description = "Character-level text synthesis with RNN, LSTM and GRU networks"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0",
+    "numpy>=1.24",
+    "pyyaml>=6.0",
+    "tqdm>=4.65",
+    "matplotlib>=3.7",
+    "nltk>=3.8",
+    "pyspellchecker>=0.8",
+]
+
+[project.optional-dependencies]
+bertscore = ["bert-score>=0.3.13"]
+dev = ["pytest>=7.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,21 @@
+# Corpora are downloaded, not committed: python scripts/download_data.py
+data/
+
+# Trained weights
+*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store

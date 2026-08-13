@@ -1,0 +1,24 @@
+# 1-layer vanilla RNN baseline. Hyperparameters from the coarse-to-fine search.
+name: rnn
+cell_type: rnn
+data: data/shakes.txt
+
+seq_length: 25
+hidden_size: 306
+num_layers: 1
+dropout: 0.0
+
+batch_size: 28
+learning_rate: 0.00017253989299888
+# The RNN needs a larger budget than the gated models: at this learning rate its
+# validation loss was still falling after 20 epochs.
+num_epochs: 40
+patience: 3
+seed: 61
+
+# Text synthesis used for the evaluation metrics.
+prompt: "ROMEO: "
+sample_length: 1000
+num_samples: 5
+temperature: 0.5
+top_p: null
