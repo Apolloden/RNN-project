@@ -1,0 +1,22 @@
+# 2-layer LSTM, the best model in the report. Set num_layers: 1 for the 1-layer variant.
+name: lstm
+cell_type: lstm
+data: data/shakes.txt
+
+seq_length: 25
+hidden_size: 576
+num_layers: 2
+dropout: 0.0
+
+batch_size: 64
+learning_rate: 0.004262771798835783
+num_epochs: 20
+patience: 3
+seed: 61
+
+# Text synthesis used for the evaluation metrics.
+prompt: "ROMEO: "
+sample_length: 1000
+num_samples: 5
+temperature: 0.5
+top_p: null
