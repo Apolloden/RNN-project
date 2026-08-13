@@ -1,0 +1,13 @@
+{
+  "name": "lstm",
+  "cell_type": "lstm",
+  "num_layers": 2,
+  "hidden_size": 576,
+  "best_epoch": 5,
+  "val_loss": 1.7874549478292465,
+  "test_loss": 1.9093514279677317,
+  "perplexity": 2.7854249477386475,
+  "spelling_accuracy": 0.9386514647666248,
+  "self_bleu": 0.12177128133328692,
+  "train_minutes": 1.83
+}
